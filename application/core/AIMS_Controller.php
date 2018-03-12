@@ -6,12 +6,13 @@ class AIMS_Controller extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->library('ion_auth');
     }
 
 
     function validate_session(){
-        if(!$this->session->user_id){
-            redirect(base_url().'login');
+        if(!$this->ion_auth->logged_in()){
+            redirect(base_url().'authentication');
         }
     }
 
