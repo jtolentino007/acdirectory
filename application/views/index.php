@@ -1,22 +1,22 @@
 <!DOCTYPE HTML>
 <html lang="en">
     
-<!-- Mirrored from citybook.kwst.net/index4.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Mar 2018 03:27:57 GMT -->
 <head>
         <!--=============== basic  ===============-->
-        <meta charset="UTF-8">
+        <!-- <meta charset="UTF-8">
         <title>Citybook -Directory Listing Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="robots" content="index, follow"/>
         <meta name="keywords" content=""/>
-        <meta name="description" content=""/>
+        <meta name="description" content=""/> -->
+        <?= $header; ?>
         <!--=============== css  ===============-->	
-        <link type="text/css" rel="stylesheet" href="css/reset.css">
-        <link type="text/css" rel="stylesheet" href="css/plugins.css">
-        <link type="text/css" rel="stylesheet" href="css/style.css">
-        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <link type="text/css" rel="stylesheet" href="../assets/frontend-assets/css/reset.css">
+        <link type="text/css" rel="stylesheet" href="../assets/frontend-assets/css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="../assets/frontend-assets/css/style.css">
+        <link type="text/css" rel="stylesheet" href="../assets/frontend-assets/css/color.css">
         <!--=============== favicons ===============-->
-        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="shortcut icon" href="../assets/frontend-assets/images/favicon.png">
     </head>
     <body>
         <!--loader-->
@@ -31,7 +31,7 @@
             <header class="main-header dark-header fs-header sticky">
                 <div class="header-inner">
                     <div class="logo-holder">
-                        <a href="index.php"><img src="images/logo.png" alt=""></a>
+                        <a href="index.php"><img src="../assets/frontend-assets/images/logo.png" alt=""></a>
                     </div>
                     <div class="header-search vis-header-search">
                         <div class="header-search-input-item">
@@ -136,17 +136,17 @@
                         <div class="slideshow-container" data-scrollax="properties: { translateY: '200px' }" >
                             <!-- slideshow-item -->	
                             <div class="slideshow-item">
-                                <div class="bg"  data-bg="images/bg/6.jpg"></div>
+                                <div class="bg"  data-bg="../assets/frontend-assets/images/bg/6.jpg"></div>
                             </div>
                             <!--  slideshow-item end  -->	
                             <!-- slideshow-item -->	
                             <div class="slideshow-item">
-                                <div class="bg"  data-bg="images/bg/16.jpg"></div>
+                                <div class="bg"  data-bg="../assets/frontend-assets/images/bg/16.jpg"></div>
                             </div>
                             <!--  slideshow-item end  -->	
                             <!-- slideshow-item -->	
                             <div class="slideshow-item">
-                                <div class="bg"  data-bg="images/bg/24.jpg"></div>
+                                <div class="bg"  data-bg="../assets/frontend-assets/images/bg/24.jpg"></div>
                             </div>
                             <!--  slideshow-item end  -->	                        
                         </div>
@@ -202,7 +202,7 @@
                                 <div class="gallery-item">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="images/all/1.jpg"   alt="">
+                                            <img  src="../assets/frontend-assets/images/all/1.jpg"   alt="">
                                             <div class="listing-counter"><span>10 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.php">Conference and Event</a></h3>
@@ -216,7 +216,7 @@
                                 <div class="gallery-item gallery-item-second">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="images/bg/19.jpg"   alt="">
+                                            <img  src="../assets/frontend-assets/images/bg/19.jpg"   alt="">
                                             <div class="listing-counter"><span>6 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.php">Cafe - Pub</a></h3>
@@ -230,7 +230,7 @@
                                 <div class="gallery-item">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="images/all/3.jpg"   alt="">
+                                            <img  src="../assets/frontend-assets/images/all/3.jpg"   alt="">
                                             <div class="listing-counter"><span>21 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.php">Gym - Fitness</a></h3>
@@ -244,7 +244,7 @@
                                 <div class="gallery-item">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="images/all/22.jpg"   alt="">
+                                            <img  src="../assets/frontend-assets/images/all/22.jpg"   alt="">
                                             <div class="listing-counter"><span>7 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.php">Hotels</a></h3>
@@ -258,7 +258,7 @@
                                 <div class="gallery-item">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="images/all/5.jpg"   alt="">
+                                            <img  src="../assets/frontend-assets/images/all/5.jpg"   alt="">
                                             <div class="listing-counter"><span>15 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.php">Shop - Store</a></h3>
@@ -294,13 +294,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/all/1.jpg" alt="">
+                                                <img src="../assets/frontend-assets/images/all/1.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>4</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.php">Retail</a>
-                                                <div class="listing-avatar"><a href="author-single.php"><img src="images/avatar/5.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.php"><img src="../assets/frontend-assets/images/avatar/5.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Lisa Smith</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.php">Event in City Mol</a></h3>
@@ -323,13 +323,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/all/2.jpg" alt="">
+                                                <img src="../assets/frontend-assets/images/all/2.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>15</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.php">Event</a>
-                                                <div class="listing-avatar"><a href="author-single.php"><img src="images/avatar/2.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.php"><img src="../assets/frontend-assets/images/avatar/2.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.php">Cafe "Lollipop"</a></h3>
@@ -352,13 +352,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/all/20.jpg" alt="">
+                                                <img src="../assets/frontend-assets/images/all/20.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>13</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.php">Gym </a>
-                                                <div class="listing-avatar"><a href="author-single.php"><img src="images/avatar/4.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.php"><img src="../assets/frontend-assets/images/avatar/4.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.php">Gym In Brooklyn</a></h3>
@@ -381,13 +381,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/all/5.jpg" alt="">
+                                                <img src="../assets/frontend-assets/images/all/5.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>3</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.php">Shops</a>
-                                                <div class="listing-avatar"><a href="author-single.php"><img src="images/avatar/1.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.php"><img src="../assets/frontend-assets/images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.php">Shop in Boutique Zone</a></h3>
@@ -410,13 +410,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/all/6.jpg" alt="">
+                                                <img src="../assets/frontend-assets/images/all/6.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>35</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.php">Cars</a>
-                                                <div class="listing-avatar"><a href="author-single.php"><img src="images/avatar/6.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.php"><img src="../assets/frontend-assets/images/avatar/6.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Kliff Antony</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.php">Best deal For the Cars</a></h3>
@@ -439,13 +439,13 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="images/all/4.jpg" alt="">
+                                                <img src="../assets/frontend-assets/images/all/4.jpg" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>553</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.php">Restourants</a>
-                                                <div class="listing-avatar"><a href="author-single.php"><img src="images/avatar/3.jpg" alt=""></a>
+                                                <div class="listing-avatar"><a href="author-single.php"><img src="../assets/frontend-assets/images/avatar/3.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Adam Koncy</strong></span>
                                                 </div>
                                                 <h3><a href="listing-single.php">Luxury Restourant</a></h3>
@@ -478,11 +478,11 @@
                                 <div class="col-md-6">
                                     <div class="images-collage fl-wrap">
                                         <div class="images-collage-title">City<span>Book</span></div>
-                                        <div class="images-collage-main images-collage-item"><img src="images/avatar/1.jpg" alt=""></div>
-                                        <div class="images-collage-other images-collage-item" data-position-left="23" data-position-top="10" data-zindex="2"><img src="images/avatar/2.jpg" alt=""></div>
-                                        <div class="images-collage-other images-collage-item" data-position-left="62" data-position-top="54" data-zindex="5"><img src="images/avatar/4.jpg" alt=""></div>
-                                        <div class="images-collage-other images-collage-item anim-col" data-position-left="18" data-position-top="70" data-zindex="11"><img src="images/avatar/6.jpg" alt=""></div>
-                                        <div class="images-collage-other images-collage-item" data-position-left="37" data-position-top="90" data-zindex="1"><img src="images/avatar/5.jpg" alt=""></div>
+                                        <div class="images-collage-main images-collage-item"><img src="../assets/frontend-assets/images/avatar/1.jpg" alt=""></div>
+                                        <div class="images-collage-other images-collage-item" data-position-left="23" data-position-top="10" data-zindex="2"><img src="../assets/frontend-assets/images/avatar/2.jpg" alt=""></div>
+                                        <div class="images-collage-other images-collage-item" data-position-left="62" data-position-top="54" data-zindex="5"><img src="../assets/frontend-assets/images/avatar/4.jpg" alt=""></div>
+                                        <div class="images-collage-other images-collage-item anim-col" data-position-left="18" data-position-top="70" data-zindex="11"><img src="../assets/frontend-assets/images/avatar/6.jpg" alt=""></div>
+                                        <div class="images-collage-other images-collage-item" data-position-left="37" data-position-top="90" data-zindex="1"><img src="../assets/frontend-assets/images/avatar/5.jpg" alt=""></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -541,7 +541,7 @@
                         </div>
                     </section>
                     <section class="parallax-section" data-scrollax-parent="true">
-                        <div class="bg"  data-bg="images/bg/8.jpg" data-scrollax="properties: { translateY: '100px' }"></div>
+                        <div class="bg"  data-bg="../assets/frontend-assets/images/bg/8.jpg" data-scrollax="properties: { translateY: '100px' }"></div>
                         <div class="overlay co lor-overlay"></div>
                         <!--container-->
                         <div class="container">
@@ -655,7 +655,7 @@
                                                 <div class="num" data-content="0" data-num="254">154</div>
                                             </div>
                                         </div>
-                                        <h6>New Visiters Every Week</h6>
+                                        <h6>New Visitors Every Week</h6>
                                     </div>
                                 </div>
                                 <!-- inline-facts end -->
@@ -720,7 +720,7 @@
                                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi arch itecto beatae vitae dicta sunt explicabo. </p>
                                     </div>
                                     <div class="testimonilas-avatar-item">
-                                        <div class="testimonilas-avatar"><img src="images/avatar/4.jpg" alt=""></div>
+                                        <div class="testimonilas-avatar"><img src="../assets/frontend-assets/images/avatar/4.jpg" alt=""></div>
                                         <h4>Lisa Noory</h4>
                                         <span>Restaurant Owner</span>
                                     </div>
@@ -733,7 +733,7 @@
                                         <p>Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra.</p>
                                     </div>
                                     <div class="testimonilas-avatar-item">
-                                        <div class="testimonilas-avatar"><img src="images/avatar/3.jpg" alt=""></div>
+                                        <div class="testimonilas-avatar"><img src="../assets/frontend-assets/images/avatar/3.jpg" alt=""></div>
                                         <h4>Antony Moore</h4>
                                         <span>Restaurant Owner</span>
                                     </div>
@@ -746,7 +746,7 @@
                                         <p>Feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te odio dignissim qui blandit praesent.</p>
                                     </div>
                                     <div class="testimonilas-avatar-item">
-                                        <div class="testimonilas-avatar"><img src="images/avatar/1.jpg" alt=""></div>
+                                        <div class="testimonilas-avatar"><img src="../assets/frontend-assets/images/avatar/1.jpg" alt=""></div>
                                         <h4>Austin Harisson</h4>
                                         <span>Restaurant Owner</span>
                                     </div>
@@ -759,7 +759,7 @@
                                         <p>Qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram seacula quarta decima et quinta decima.</p>
                                     </div>
                                     <div class="testimonilas-avatar-item">
-                                        <div class="testimonilas-avatar"><img src="images/avatar/6.jpg" alt=""></div>
+                                        <div class="testimonilas-avatar"><img src="../assets/frontend-assets/images/avatar/6.jpg" alt=""></div>
                                         <h4>Garry Colonsi</h4>
                                         <span>Restaurant Owner</span>
                                     </div>
@@ -778,12 +778,12 @@
                         <div class="container">
                             <div class="fl-wrap spons-list">
                                 <ul class="client-carousel">
-                                    <li><a href="#" target="_blank"><img src="images/clients/1.png" alt=""></a></li>
-                                    <li><a href="#" target="_blank"><img src="images/clients/2.png" alt=""></a></li>
-                                    <li><a href="#" target="_blank"><img src="images/clients/3.png" alt=""></a></li>
-                                    <li><a href="#" target="_blank"><img src="images/clients/1.png" alt=""></a></li>
-                                    <li><a href="#" target="_blank"><img src="images/clients/2.png" alt=""></a></li>
-                                    <li><a href="#" target="_blank"><img src="images/clients/3.png" alt=""></a></li>
+                                    <li><a href="#" target="_blank"><img src="../assets/frontend-assets/images/clients/1.png" alt=""></a></li>
+                                    <li><a href="#" target="_blank"><img src="../assets/frontend-assets/images/clients/2.png" alt=""></a></li>
+                                    <li><a href="#" target="_blank"><img src="../assets/frontend-assets/images/clients/3.png" alt=""></a></li>
+                                    <li><a href="#" target="_blank"><img src="../assets/frontend-assets/images/clients/1.png" alt=""></a></li>
+                                    <li><a href="#" target="_blank"><img src="../assets/frontend-assets/images/clients/2.png" alt=""></a></li>
+                                    <li><a href="#" target="_blank"><img src="../assets/frontend-assets/images/clients/3.png" alt=""></a></li>
                                 </ul>
                                 <div class="sp-cont sp-cont-prev"><i class="fa fa-angle-left"></i></div>
                                 <div class="sp-cont sp-cont-next"><i class="fa fa-angle-right"></i></div>
@@ -804,12 +804,12 @@
                                 <div class="col-md-4">
                                     <article class="card-post">
                                         <div class="card-post-img fl-wrap">
-                                            <a href="blog-single.php"><img src="images/all/15.jpg"   alt=""></a>
+                                            <a href="blog-single.php"><img src="../assets/frontend-assets/images/all/15.jpg"   alt=""></a>
                                         </div>
                                         <div class="card-post-content fl-wrap">
                                             <h3><a href="blog-single.php">Gallery Post</a></h3>
                                             <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. </p>
-                                            <div class="post-author"><a href="#"><img src="images/avatar/4.jpg" alt=""><span>By , Alisa Noory</span></a></div>
+                                            <div class="post-author"><a href="#"><img src="../assets/frontend-assets/images/avatar/4.jpg" alt=""><span>By , Alisa Noory</span></a></div>
                                             <div class="post-opt">
                                                 <ul>
                                                     <li><i class="fa fa-calendar-check-o"></i> <span>25 April 2018</span></li>
@@ -823,12 +823,12 @@
                                 <div class="col-md-4">
                                     <article class="card-post">
                                         <div class="card-post-img fl-wrap">
-                                            <a href="blog-single.php"><img  src="images/all/18.jpg"   alt=""></a>
+                                            <a href="blog-single.php"><img  src="../assets/frontend-assets/images/all/18.jpg"   alt=""></a>
                                         </div>
                                         <div class="card-post-content fl-wrap">
                                             <h3><a href="blog-single.php">Video and gallery post</a></h3>
                                             <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. </p>
-                                            <div class="post-author"><a href="#"><img src="images/avatar/5.jpg" alt=""><span>By , Mery Lynn</span></a></div>
+                                            <div class="post-author"><a href="#"><img src="../assets/frontend-assets/images/avatar/5.jpg" alt=""><span>By , Mery Lynn</span></a></div>
                                             <div class="post-opt">
                                                 <ul>
                                                     <li><i class="fa fa-calendar-check-o"></i> <span>25 April 2018</span></li>
@@ -842,12 +842,12 @@
                                 <div class="col-md-4">
                                     <article class="card-post">
                                         <div class="card-post-img fl-wrap">
-                                            <a href="blog-single.php"><img  src="images/all/19.jpg"   alt=""></a>
+                                            <a href="blog-single.php"><img  src="../assets/frontend-assets/images/all/19.jpg"   alt=""></a>
                                         </div>
                                         <div class="card-post-content fl-wrap">
                                             <h3><a href="blog-single.php">Post Article</a></h3>
                                             <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. </p>
-                                            <div class="post-author"><a href="#"><img src="images/avatar/6.jpg" alt=""><span>By , Garry Dee</span></a></div>
+                                            <div class="post-author"><a href="#"><img src="../assets/frontend-assets/images/avatar/6.jpg" alt=""><span>By , Garry Dee</span></a></div>
                                             <div class="post-opt">
                                                 <ul>
                                                     <li><i class="fa fa-calendar-check-o"></i> <span>25 April 2018</span></li>
@@ -866,7 +866,7 @@
                     <!--section -->
                     <section class="gradient-bg">
                         <div class="cirle-bg">
-                            <div class="bg" data-bg="images/bg/circle.png"></div>
+                            <div class="bg" data-bg="../assets/frontend-assets/images/bg/circle.png"></div>
                         </div>
                         <div class="container">
                             <div class="join-wrap fl-wrap">
@@ -907,21 +907,21 @@
                                 <div class="widget-posts fl-wrap">
                                     <ul>
                                         <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
+                                            <a href="#"  class="widget-posts-img"><img src="../assets/frontend-assets/images/all/1.jpg" class="respimg" alt=""></a>
                                             <div class="widget-posts-descr">
                                                 <a href="#" title="">Vivamus dapibus rutrum</a>
                                                 <span class="widget-posts-date"> 21 Mar 09.05 </span> 
                                             </div>
                                         </li>
                                         <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="images/all/2.jpg" class="respimg" alt=""></a>
+                                            <a href="#"  class="widget-posts-img"><img src="../assets/frontend-assets/images/all/2.jpg" class="respimg" alt=""></a>
                                             <div class="widget-posts-descr">
                                                 <a href="#" title=""> In hac habitasse platea</a>
                                                 <span class="widget-posts-date"> 7 Mar 18.21 </span> 
                                             </div>
                                         </li>
                                         <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="images/all/3.jpg" class="respimg" alt=""></a>
+                                            <a href="#"  class="widget-posts-img"><img src="../assets/frontend-assets/images/all/3.jpg" class="respimg" alt=""></a>
                                             <div class="widget-posts-descr">
                                                 <a href="#" title="">Tortor tempor in porta</a>
                                                 <span class="widget-posts-date"> 7 Mar 16.42 </span>
@@ -969,7 +969,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="about-widget">
-                                    <img src="images/logo.png" alt="">
+                                    <img src="../assets/frontend-assets/images/logo.png" alt="">
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -1056,10 +1056,9 @@
         </div>
         <!-- Main end -->
         <!--=============== scripts  ===============-->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript" src="../assets/frontend-assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../assets/frontend-assets/js/plugins.js"></script>
+        <script type="text/javascript" src="../assets/frontend-assets/js/scripts.js"></script>
     </body>
 
-<!-- Mirrored from citybook.kwst.net/index4.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Mar 2018 03:30:25 GMT -->
 </html>
