@@ -10,7 +10,7 @@ class Homepage extends AIMS_Controller
 
 	public function index()
 	{
-		$data['header'] = $this->get_header("Home");
+		$data['header'] = $this->get_header("Where in Angeles City");
 		$this->load->view('index',$data);
 	}
 }
