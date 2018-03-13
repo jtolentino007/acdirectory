@@ -4,10 +4,10 @@
 <head>
         <!--=============== basic  ===============-->
         <?= $header; ?>
-        <!--=============== css  ===============-->	
+        <!--=============== css  ===============-->
         <link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/reset.css">
         <link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/plugins.css">
-        <link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/style.css">
+        <link type="text/css" rel="stylesheet " href="assets/frontend-assets/css/style.css">
         <link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/color.css">
         <!--=============== favicons ===============-->
         <link rel="shortcut icon" href="assets/frontend-assets/images/favicon.png">

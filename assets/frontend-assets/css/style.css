@@ -1279,6 +1279,9 @@ section.color-bg .section-title .breadcrumbs a:before {
 .soc-log a.twitter-log {
 	background:#55acee;
 }
+.soc-log a.google-log {
+	background:#f44336;
+}
 .close-reg:hover  , .custom-form .log-submit-btn:hover , .soc-log a:hover{
 	background: #2F3B59;
 }
