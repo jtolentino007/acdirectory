@@ -68,14 +68,7 @@
               <div class="main-register fl-wrap">
                   <!-- <div class="close-reg"><i class="fa fa-times"></i></div> -->
                   <h3><img src="assets/frontend-assets/images/logo9.png" alt=""></h3>
-                  <div class="soc-log fl-wrap">
-                      <p>For faster login or register use your social account.</p>
-                      <a href="#" class="facebook-log"><i class="fa fa-facebook-official"></i>Log in with Facebook</a>
-                      <a href="#" class="google-log"><i class="fa fa-google-plus"></i> Sign in with Google</a>
-                      <a href="#" class="twitter-log"><i class="fa fa-twitter"></i> Log in with Twitter</a>
-                  </div>
-                  <div class="log-separator fl-wrap"><span>or</span></div>
-                  <div id="tabs-container">
+                  <div id="tabs-container" style="margin-top: -20px;">
                       <ul class="tabs-menu">
                           <li class="current"><a href="#tab-1">Login</a></li>
                           <li><a href="#tab-2">Register</a></li>
@@ -120,6 +113,14 @@
                               </div>
                           </div>
                       </div>
+                  </div>
+                  <div class="log-separator fl-wrap"><span>or</span></div>
+                  <div class="soc-log fl-wrap">
+                      <p>For faster login or register use your social account.</p>
+                      <a href="#" class="facebook-log"><i class="fa fa-facebook-official"></i>Log in with Facebook</a>
+                      <a href="#" class="google-log"><i class="fa fa-google-plus"></i> Sign in with Google</a>
+                      <a href="#" class="twitter-log"><i class="fa fa-twitter"></i> Log in with Twitter</a>
+                      <a href="#" class="instagram-log"><i class="fa fa-instagram"></i> Log in with Instagram</a>
                   </div>
               </div>
           </div>

@@ -22,6 +22,16 @@ class AIMS_Controller extends CI_Controller
       return $this->load->view('partials/header',$data,TRUE);
     }
 
+    function get_header_nav()
+    {
+      return $this->load->view('partials/header_nav','',TRUE);
+    }
+
+    function get_footer()
+    {
+      return $this->load->view('partials/footer','',TRUE);
+    }
+
     function end_session(){
         session_destroy();
         redirect(base_url().'login');

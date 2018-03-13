@@ -1282,6 +1282,9 @@ section.color-bg .section-title .breadcrumbs a:before {
 .soc-log a.google-log {
 	background:#f44336;
 }
+.soc-log a.instagram-log {
+	background:#ff5722;
+}
 .close-reg:hover  , .custom-form .log-submit-btn:hover , .soc-log a:hover{
 	background: #2F3B59;
 }

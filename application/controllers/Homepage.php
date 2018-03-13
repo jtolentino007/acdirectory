@@ -11,6 +11,8 @@ class Homepage extends AIMS_Controller
 	public function index()
 	{
 		$data['header'] = $this->get_header("Where in Angeles City");
+		$data['header_nav'] = $this->get_header_nav();
+		$data['footer'] = $this->get_footer();
 		$this->load->view('index',$data);
 	}
 }
