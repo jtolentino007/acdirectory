@@ -1,5 +1,9 @@
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="google-signin-client_id" content="809452780704-kf8rj9v58h7cm0eiijjvkhnbrl6shnsd.apps.googleusercontent.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="robots" content="index, follow"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
 <title><?= $title; ?></title>
 <script src="assets/frontend-assets/jquery/jquery-3.3.1.slim.min.js"></script>
 <script src="assets/frontend-assets/tether-1.3.3/dist/js/tether.min.js"></script>
