@@ -5,12 +5,6 @@
         <!--=============== basic  ===============-->
         <?= $header; ?>
         <!--=============== css  ===============-->
-        <link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/reset.css">
-        <link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/plugins.css">
-        <link type="text/css" rel="stylesheet " href="assets/frontend-assets/css/style.css">
-        <link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/color.css">
-        <!--=============== favicons ===============-->
-        <link rel="shortcut icon" href="assets/frontend-assets/images/favicon.png">
     </head>
     <body>
         <!--loader-->
@@ -88,8 +82,8 @@
                     <section id="sec2">
                         <div class="container">
                             <div class="section-title">
-                                <h2>Featured Categories</h2>
-                                <div class="section-subtitle">Catalog of Categories</div>
+                                <h2>Categories</h2>
+                                <div class="section-subtitle">Establishments</div>
                                 <span class="section-separator"></span>
                                 <p>Explore some of the best tips from around the city from our partners and friends.</p>
                             </div>
@@ -158,7 +152,7 @@
                                             <img  src="assets/frontend-assets/images/all/5.jpg"   alt="">
                                             <div class="listing-counter"><span>15 </span> Locations</div>
                                             <div class="listing-item-cat">
-                                                <h3><a href="listing.php">Shop - Store</a></h3>
+                                                <h3><a href="Listings">Shop - Store</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
@@ -374,7 +368,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="images-collage fl-wrap">
-                                        <div class="images-collage-title">City<span>Book</span></div>
+                                        <div class="images-collage-title"><span><img src="assets/frontend-assets/images/logo9.png" alt="" width="150"></span></div>
                                         <div class="images-collage-main images-collage-item"><img src="assets/frontend-assets/images/avatar/1.jpg" alt=""></div>
                                         <div class="images-collage-other images-collage-item" data-position-left="23" data-position-top="10" data-zindex="2"><img src="assets/frontend-assets/images/avatar/2.jpg" alt=""></div>
                                         <div class="images-collage-other images-collage-item" data-position-left="62" data-position-top="54" data-zindex="5"><img src="assets/frontend-assets/images/avatar/4.jpg" alt=""></div>
@@ -787,71 +781,72 @@
             <!--register form -->
             <div class="main-register-wrap modal">
                 <div class="main-overlay"></div>
-                <div class="main-register-holder">
-                    <div class="main-register fl-wrap">
-                        <div class="close-reg"><i class="fa fa-times"></i></div>
-                        <h3>Sign In <span>City<strong>Book</strong></span></h3>
-                        <div class="soc-log fl-wrap">
-                            <p>For faster login or register use your social account.</p>
-                            <a href="#" class="facebook-log"><i class="fa fa-facebook-official"></i>Log in with Facebook</a>
-                            <a href="#" class="twitter-log"><i class="fa fa-twitter"></i> Log in with Twitter</a>
-                        </div>
-                        <div class="log-separator fl-wrap"><span>or</span></div>
-                        <div id="tabs-container">
-                            <ul class="tabs-menu">
-                                <li class="current"><a href="#tab-1">Login</a></li>
-                                <li><a href="#tab-2">Register</a></li>
-                            </ul>
-                            <div class="tab">
-                                <div id="tab-1" class="tab-content">
-                                    <div class="custom-form">
-                                        <form method="post"  name="registerform">
-                                            <label>Username or Email Address * </label>
-                                            <input name="email" type="text"   onClick="this.select()" value="">
-                                            <label >Password * </label>
-                                            <input name="password" type="password"   onClick="this.select()" value="" >
-                                            <button type="submit"  class="log-submit-btn"><span>Log In</span></button>
-                                            <div class="clearfix"></div>
-                                            <div class="filter-tags">
-                                                <input id="check-a" type="checkbox" name="check">
-                                                <label for="check-a">Remember me</label>
-                                            </div>
-                                        </form>
-                                        <div class="lost_password">
-                                            <a href="#">Lost Your Password?</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab">
-                                    <div id="tab-2" class="tab-content">
-                                        <div class="custom-form">
-                                            <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
-                                                <label >First Name * </label>
-                                                <input name="name" type="text"   onClick="this.select()" value="">
-                                                <label>Second Name *</label>
-                                                <input name="name2" type="text"  onClick="this.select()" value="">
-                                                <label>Email Address *</label>
-                                                <input name="email" type="text"  onClick="this.select()" value="">
-                                                <label >Password *</label>
-                                                <input name="password" type="password"   onClick="this.select()" value="" >
-                                                <button type="submit"     class="log-submit-btn"  ><span>Register</span></button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  <div class="main-register-holder" style="position: relative; top: -80px;">
+                      <div class="main-register fl-wrap">
+                          <div class="close-reg"><i class="fa fa-times"></i></div>
+                          <h3><img src="assets/frontend-assets/images/logo9.png" alt=""></h3>
+                          <div id="tabs-container" style="margin-top: -20px;">
+                              <ul class="tabs-menu">
+                                  <li class="current"><a href="#tab-1">Login</a></li>
+                                  <li><a href="#tab-2">Register</a></li>
+                              </ul>
+                              <div class="tab">
+                                  <div id="tab-1" class="tab-content">
+                                      <div class="custom-form">
+                                          <form method="post"  name="registerform">
+                                            
+                                              <label>Username or Email Address * </label>
+                                              <input name="identity" type="text"   onClick="this.select()" value id="identity">
+                                              <label >Password * </label>
+                                              <input name="password" type="password"   onClick="this.select()" value id="password" >
+                                              <button type="submit"  class="log-submit-btn"><span>Log In</span></button>
+                                              <div class="clearfix"></div>
+                                              <div class="filter-tags">
+                                                  <input id="check-a" type="checkbox" name="remember" value="1" id="remember">
+                                                  <label for="check-a">Remember me</label>
+                                              </div>
+                                           
+                                          </form>
+                                          <div class="lost_password">
+                                              <a href="#">Lost Your Password?</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="tab">
+                                      <div id="tab-2" class="tab-content">
+                                          <div class="custom-form">
+                                              <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
+                                                  <label >First Name * </label>
+                                                  <input name="name" type="text"   onClick="this.select()" value="">
+                                                  <label>Second Name *</label>
+                                                  <input name="name2" type="text"  onClick="this.select()" value="">
+                                                  <label>Email Address *</label>
+                                                  <input name="email" type="text"  onClick="this.select()" value="">
+                                                  <label >Password *</label>
+                                                  <input name="password" type="password"   onClick="this.select()" value="" >
+                                                  <button type="submit" name="submit" value="Login"    class="log-submit-btn"  ><span>Register</span></button>
+                                              </form>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="log-separator fl-wrap"><span>or</span></div>
+                          <div class="soc-log fl-wrap">
+                              <p>For faster login or register use your social account.</p>
+                              <a href="#" class="facebook-log"><i class="fa fa-facebook-official"></i>Log in with Facebook</a>
+                              <a href="#" class="google-log"><i class="fa fa-google-plus"></i> Sign in with Google</a>
+                              <a href="#" class="twitter-log"><i class="fa fa-twitter"></i> Log in with Twitter</a>
+                              <a href="#" class="instagram-log"><i class="fa fa-instagram"></i> Log in with Instagram</a>
+                          </div>
+                      </div>
+                  </div>
             </div>
             <!--register form end -->
             <a class="to-top"><i class="fa fa-angle-up"></i></a>
         </div>
         <!-- Main end -->
-        <!--=============== scripts  ===============-->
-        <script type="text/javascript" src="assets/frontend-assets/js/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/frontend-assets/js/plugins.js"></script>
-        <script type="text/javascript" src="assets/frontend-assets/js/scripts.js"></script>
+        <?= $js_footer ?>
     </body>
 
 </html>

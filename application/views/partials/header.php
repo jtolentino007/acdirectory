@@ -7,4 +7,9 @@
 <title><?= $title; ?></title>
 <script src="assets/frontend-assets/jquery/jquery-3.3.1.slim.min.js"></script>
 <link rel="stylesheet" href="assets/frontend-assets/fontawesome-free-5.0.8/svg-with-js/css/fa-svg-with-js.css">
+<link rel="shortcut icon" href="assets/frontend-assets/images/favicon.png">
+<link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/reset.css">
+<link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/plugins.css">
+<link type="text/css" rel="stylesheet " href="assets/frontend-assets/css/style.css">
+<link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/color.css">
 <script src="https://apis.google.com/js/platform.js" async defer></script>

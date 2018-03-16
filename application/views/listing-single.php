@@ -1,22 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="en">
     
-<!-- Mirrored from citybook.kwst.net/listing-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Mar 2018 03:33:34 GMT -->
 <head>
         <!--=============== basic  ===============-->
-        <meta charset="UTF-8">
-        <title>Citybook -Directory Listing Template</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta name="robots" content="index, follow"/>
-        <meta name="keywords" content=""/>
-        <meta name="description" content=""/>
-        <!--=============== css  ===============-->	
-        <link type="text/css" rel="stylesheet" href="css/reset.css">
-        <link type="text/css" rel="stylesheet" href="css/plugins.css">
-        <link type="text/css" rel="stylesheet" href="css/style.css">
-        <link type="text/css" rel="stylesheet" href="css/color.css">
-        <!--=============== favicons ===============-->
-        <link rel="shortcut icon" href="images/favicon.ico">
+        <?= $header; ?>
+        <!--=============== css  ===============-->
     </head>
     <body>
         <!--loader-->
@@ -31,7 +19,7 @@
             <header class="main-header dark-header fs-header sticky">
                 <div class="header-inner">
                     <div class="logo-holder">
-                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        <a href="index.html"><img src="assets/frontend-assets/images/logo.png" alt=""></a>
                     </div>
                     <div class="header-search vis-header-search">
                         <div class="header-search-input-item">
@@ -137,40 +125,40 @@
                             <!-- slick-slide-item -->
                             <div class="slick-slide-item">
                                 <div class="box-item">
-                                    <img  src="images/all/single/9.jpg"   alt="">
-                                    <a href="images/all/single/9.jpg" class="gal-link popup-image"><i class="fa fa-search"  ></i></a>
+                                    <img  src="assets/frontend-assets/images/all/single/9.jpg"   alt="">
+                                    <a href="assets/frontend-assets/images/all/single/9.jpg" class="gal-link popup-image"><i class="fa fa-search"  ></i></a>
                                 </div>
                             </div>
                             <!-- slick-slide-item end -->
                             <!-- slick-slide-item -->
                             <div class="slick-slide-item">
                                 <div class="box-item">
-                                    <img  src="images/all/single/8.jpg"   alt="">
-                                    <a href="images/all/single/8.jpg" class="gal-link popup-image"><i class="fa fa-search"  ></i></a>
+                                    <img  src="assets/frontend-assets/images/all/single/8.jpg"   alt="">
+                                    <a href="assets/frontend-assets/images/all/single/8.jpg" class="gal-link popup-image"><i class="fa fa-search"  ></i></a>
                                 </div>
                             </div>
                             <!-- slick-slide-item end -->
                             <!-- slick-slide-item -->
                             <div class="slick-slide-item">
                                 <div class="box-item">
-                                    <img  src="images/all/single/7.jpg"   alt="">
-                                    <a href="images/all/single/7.jpg" class="gal-link popup-image"><i class="fa fa-search"  ></i></a>
+                                    <img  src="assets/frontend-assets/images/all/single/7.jpg"   alt="">
+                                    <a href="assets/frontend-assets/images/all/single/7.jpg" class="gal-link popup-image"><i class="fa fa-search"  ></i></a>
                                 </div>
                             </div>
                             <!-- slick-slide-item end -->
                             <!-- slick-slide-item -->
                             <div class="slick-slide-item">
                                 <div class="box-item">
-                                    <img  src="images/all/single/10.jpg"   alt="">
-                                    <a href="images/all/single/10.jpg" class="gal-link popup-image"><i class="fa fa-search"  ></i></a>
+                                    <img  src="assets/frontend-assets/images/all/single/10.jpg"   alt="">
+                                    <a href="assets/frontend-assets/images/all/single/10.jpg" class="gal-link popup-image"><i class="fa fa-search"  ></i></a>
                                 </div>
                             </div>
                             <!-- slick-slide-item end -->
                             <!-- slick-slide-item -->
                             <div class="slick-slide-item">
                                 <div class="box-item">
-                                    <img  src="images/all/single/11.jpg"   alt="">
-                                    <a href="images/all/single/11.jpg" class="gal-link popup-image"><i class="fa fa-search"  ></i></a>
+                                    <img  src="assets/frontend-assets/images/all/single/11.jpg"   alt="">
+                                    <a href="assets/frontend-assets/images/all/single/11.jpg" class="gal-link popup-image"><i class="fa fa-search"  ></i></a>
                                 </div>
                             </div>
                             <!-- slick-slide-item end -->
@@ -345,7 +333,7 @@
                                                 <!-- reviews-comments-item -->  
                                                 <div class="reviews-comments-item">
                                                     <div class="review-comments-avatar">
-                                                        <img src="images/avatar/1.jpg" alt=""> 
+                                                        <img src="assets/frontend-assets/images/avatar/1.jpg" alt=""> 
                                                     </div>
                                                     <div class="reviews-comments-item-text">
                                                         <h4><a href="#">Jessie Manrty</a></h4>
@@ -359,7 +347,7 @@
                                                 <!-- reviews-comments-item -->  
                                                 <div class="reviews-comments-item">
                                                     <div class="review-comments-avatar">
-                                                        <img src="images/avatar/2.jpg" alt=""> 
+                                                        <img src="assets/frontend-assets/images/avatar/2.jpg" alt=""> 
                                                     </div>
                                                     <div class="reviews-comments-item-text">
                                                         <h4><a href="#">Mark Rose</a></h4>
@@ -373,7 +361,7 @@
                                                 <!-- reviews-comments-item -->  
                                                 <div class="reviews-comments-item">
                                                     <div class="review-comments-avatar">
-                                                        <img src="images/avatar/3.jpg" alt=""> 
+                                                        <img src="assets/frontend-assets/images/avatar/3.jpg" alt=""> 
                                                     </div>
                                                     <div class="reviews-comments-item-text">
                                                         <h4><a href="#">Adam Koncy</a></h4>
@@ -534,7 +522,7 @@
                                             <div class="box-widget list-author-widget">
                                                 <div class="list-author-widget-header shapes-bg-small  color-bg fl-wrap">
                                                     <span class="list-author-widget-link"><a href="author-single.html">Alisa Noory</a></span>
-                                                    <img src="images/avatar/4.jpg" alt=""> 
+                                                    <img src="assets/frontend-assets/images/avatar/4.jpg" alt=""> 
                                                 </div>
                                                 <div class="box-widget-content">
                                                     <div class="list-author-widget-text">
@@ -560,21 +548,21 @@
                                                 <div class="box-widget-content">
                                                     <ul>
                                                         <li class="clearfix">
-                                                            <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg"  alt=""></a>
+                                                            <a href="#"  class="widget-posts-img"><img src="assets/frontend-assets/images/all/1.jpg"  alt=""></a>
                                                             <div class="widget-posts-descr">
                                                                 <a href="#" title="">Cafe "Lollipop"</a>
                                                                 <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 21 Mar 2017 </span> 
                                                             </div>
                                                         </li>
                                                         <li class="clearfix">
-                                                            <a href="#"  class="widget-posts-img"><img src="images/all/2.jpg"  alt=""></a>
+                                                            <a href="#"  class="widget-posts-img"><img src="assets/frontend-assets/images/all/2.jpg"  alt=""></a>
                                                             <div class="widget-posts-descr">
                                                                 <a href="#" title=""> Apartment in the Center</a>
                                                                 <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 7 Mar 2017 </span> 
                                                             </div>
                                                         </li>
                                                         <li class="clearfix">
-                                                            <a href="#"  class="widget-posts-img"><img src="images/all/3.jpg"  alt=""></a>
+                                                            <a href="#"  class="widget-posts-img"><img src="assets/frontend-assets/images/all/3.jpg"  alt=""></a>
                                                             <div class="widget-posts-descr">
                                                                 <a href="#" title="">Event in City Mol</a>
                                                                 <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 7 Mar 2017 </span>
@@ -597,7 +585,7 @@
                     <!--  section   --> 
                     <section class="gradient-bg">
                         <div class="cirle-bg">
-                            <div class="bg" data-bg="images/bg/circle.png"></div>
+                            <div class="bg" data-bg="assets/frontend-assets/images/bg/circle.png"></div>
                         </div>
                         <div class="container">
                             <div class="join-wrap fl-wrap">
@@ -617,111 +605,7 @@
             </div>
             <!-- wrapper end -->
             <!--footer -->
-            <footer class="main-footer dark-footer  ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="footer-widget fl-wrap">
-                                <h3>About Us</h3>
-                                <div class="footer-contacts-widget fl-wrap">
-                                    <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. </p>
-                                    <ul  class="footer-contacts fl-wrap">
-                                        <li><span><i class="fa fa-envelope-o"></i> Mail :</span><a href="#" target="_blank">yourmail@domain.com</a></li>
-                                        <li> <span><i class="fa fa-map-marker"></i> Adress :</span><a href="#" target="_blank">USA 27TH Brooklyn NY</a></li>
-                                        <li><span><i class="fa fa-phone"></i> Phone :</span><a href="#">+7(111)123456789</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer-widget fl-wrap">
-                                <h3>Our Last News</h3>
-                                <div class="widget-posts fl-wrap">
-                                    <ul>
-                                        <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
-                                            <div class="widget-posts-descr">
-                                                <a href="#" title="">Vivamus dapibus rutrum</a>
-                                                <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 21 Mar 09.05 </span> 
-                                            </div>
-                                        </li>
-                                        <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="images/all/2.jpg" class="respimg" alt=""></a>
-                                            <div class="widget-posts-descr">
-                                                <a href="#" title=""> In hac habitasse platea</a>
-                                                <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 7 Mar 18.21 </span> 
-                                            </div>
-                                        </li>
-                                        <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="images/all/3.jpg" class="respimg" alt=""></a>
-                                            <div class="widget-posts-descr">
-                                                <a href="#" title="">Tortor tempor in porta</a>
-                                                <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 7 Mar 16.42 </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer-widget fl-wrap">
-                                <h3>Our  Twitter</h3>
-                                <div id="footer-twiit"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer-widget fl-wrap">
-                                <h3>Subscribe</h3>
-                                <div class="subscribe-widget fl-wrap">
-                                    <p>Want to be notified when we launch a new template or an udpate. Just  send you a notification by email.</p>
-                                    <div class="subcribe-form">
-                                        <form id="subscribe">
-                                            <input class="enteremail" name="email" id="subscribe-email" placeholder="Email" spellcheck="false" type="text">
-                                            <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fa fa-rss"></i> Subscribe</button>
-                                            <label for="subscribe-email" class="subscribe-message"></label>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="footer-widget fl-wrap">
-                                    <div class="footer-menu fl-wrap">
-                                        <ul>
-                                            <li><a href="#">Home </a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Listing</a></li>
-                                            <li><a href="#">Contacts</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sub-footer fl-wrap">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="about-widget">
-                                    <img src="images/logo.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="copyright"> &#169; CityBook 2018 .  All rights reserved.</div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="footer-social">
-                                    <ul>
-                                        <li><a href="#" target="_blank" ><i class="fa fa-facebook-official"></i></a></li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" target="_blank" ><i class="fa fa-chrome"></i></a></li>
-                                        <li><a href="#" target="_blank" ><i class="fa fa-vk"></i></a></li>
-                                        <li><a href="#" target="_blank" ><i class="fa fa-whatsapp"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+                <?= $footer; ?>
             <!--footer end  -->
             <!--register form -->
             <div class="main-register-wrap modal">
@@ -788,14 +672,7 @@
         </div>
         <!-- Main end -->
         <!--=============== scripts  ===============-->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>   
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo"></script>
-        <script type="text/javascript" src="js/map_infobox.js"></script>
-        <script type="text/javascript" src="js/markerclusterer.js"></script>  
-        <script type="text/javascript" src="js/maps.js"></script>
+        <?= $js_footer ?>
     </body>
 
-<!-- Mirrored from citybook.kwst.net/listing-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Mar 2018 03:33:55 GMT -->
 </html>

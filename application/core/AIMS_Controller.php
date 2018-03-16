@@ -32,6 +32,11 @@ class AIMS_Controller extends CI_Controller
       return $this->load->view('partials/footer','',TRUE);
     }
 
+    function get_js()
+    {
+      return $this->load->view('partials/js_footer','',TRUE);
+    }
+
     function end_session(){
         session_destroy();
         redirect(base_url().'login');

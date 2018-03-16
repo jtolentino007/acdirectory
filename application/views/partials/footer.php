@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="copyright"> &#169; CityBook 2018 .  All rights reserved.</div>
+                    <div class="copyright"> &#169; AIMS 2018 .  All rights reserved.</div>
                 </div>
                 <div class="col-md-4">
                     <div class="footer-social">
