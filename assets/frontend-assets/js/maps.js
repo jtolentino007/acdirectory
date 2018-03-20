@@ -135,7 +135,7 @@
                 lat: e("#singleMap").data("latitude")
             },
             a = new google.maps.Map(document.getElementById("singleMap"), {
-                zoom: 14,
+                zoom: 18,
                 center: o,
                 scrollwheel: !1,
                 zoomControl: !1,

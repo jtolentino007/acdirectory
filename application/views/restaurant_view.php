@@ -16,104 +16,7 @@
         <!-- Main  -->
         <div id="main">
             <!-- header-->
-            <header class="main-header dark-header fs-header sticky">
-                <div class="header-inner">
-                    <div class="logo-holder">
-                        <a href="index.php"><img src="assets/frontend-assets/images/logo.png" alt=""></a>
-                    </div>
-                    <div class="header-search vis-header-search">
-                        <div class="header-search-input-item">
-                            <input type="text" placeholder="Keywords" value=""/>
-                        </div>
-                        <div class="header-search-select-item">
-                            <select data-placeholder="All Categories" class="chosen-select" >
-                                <option>All Categories</option>
-                                <option>Shops</option>
-                                <option>Hotels</option>
-                                <option>Restaurants</option>
-                                <option>Fitness</option>
-                                <option>Events</option>
-                            </select>
-                        </div>
-                        <button class="header-search-button" onclick="window.location.href='listing.php'">Search</button>
-                    </div>
-                    <div class="show-search-button"><i class="fa fa-search"></i> <span>Search</span></div>
-                    <a href="dashboard-add-listing.php" class="add-list">Add Listing <span><i class="fa fa-plus"></i></span></a>
-                    <div class="show-reg-form modal-open"><i class="fa fa-sign-in"></i>Sign In</div>
-                    <!-- nav-button-wrap-->
-                    <div class="nav-button-wrap color-bg">
-                        <div class="nav-button">
-                            <span></span><span></span><span></span>
-                        </div>
-                    </div>
-                    <!-- nav-button-wrap end-->
-                    <!--  navigation -->
-                    <div class="nav-holder main-menu">
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">Home <i class="fa fa-caret-down"></i></a>
-                                    <!--second level -->
-                                    <ul>
-                                        <li><a href="index.php">Parallax Image</a></li>
-                                        <li><a href="index2.php">Video</a></li>
-                                        <li><a href="index3.php">Map</a></li>
-                                        <li><a href="index4.php">Slideshow</a></li>
-                                        <li><a href="index5.php">Sider</a></li>
-                                    </ul>
-                                    <!--second level end-->
-                                </li>
-                                <li>
-                                    <a href="#" class="act-link">Listings <i class="fa fa-caret-down"></i></a>
-                                    <!--second level -->
-                                    <ul>
-                                        <li><a href="Listings">Column map</a></li>
-                                        <li><a href="listing2.php">Column map 2</a></li>
-                                        <li><a href="listing3.php">Fullwidth Map</a></li>
-                                        <li><a href="listing4.php">Fullwidth Map 2</a></li>
-                                        <li><a href="listing5.php">Without Map</a></li>
-                                        <li><a href="listing6.php">Without Map 2</a></li>
-                                        <li>
-                                            <a href="#">Single <i class="fa fa-caret-down"></i></a>
-                                            <!--third  level  -->
-                                            <ul>
-                                                <li><a href="ListingSingle">Style 1</a></li>
-                                                <li><a href="listingsingle2.php">Style 2</a></li>
-                                                <li><a href="listingsingle3.php">Style 3</a></li>
-                                            </ul>
-                                            <!--third  level end-->
-                                        </li>
-                                    </ul>
-                                    <!--second level end-->
-                                </li>
-                                <li>
-                                    <a href="blog.php">News</a>
-                                </li>
-                                <li>
-                                    <a href="#">Pages <i class="fa fa-caret-down"></i></a>
-                                    <!--second level -->
-                                    <ul>
-                                        <li><a href="about.php">About</a></li>
-                                        <li><a href="contacts.php">Contacts</a></li>
-                                        <li><a href="author-single.php">User single</a></li>
-                                        <li><a href="how-itworks.php">How it Works</a></li>
-                                        <li><a href="pricing-tables.php">Pricing</a></li>
-                                        <li><a href="dashboard-myprofile.php">User Dasboard</a></li>
-                                        <li><a href="blog-single.php">Blog Single</a></li>
-                                        <li><a href="dashboard-add-listing.php">Add Listing</a></li>
-                                        <li><a href="404.php">404</a></li>
-                                        <li><a href="coming-soon.php">Coming Soon</a></li>
-                                        <li><a href="header2.php">Header 2</a></li>
-                                        <li><a href="footer-fixed.php">Footer Fixed</a></li>
-                                    </ul>
-                                    <!--second level end-->
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!-- navigation  end -->
-                </div>
-            </header>
+            <?= $header_nav; ?>
             <!--  header end -->
             <!-- wrapper -->
             <div id="wrapper">
@@ -222,7 +125,7 @@
                                                 <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
                                                     <span>(7 reviews)</span>
                                                 </div>
-                                                <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>305 McArthur Highway, Balibago, Angeles City</a></div>
+                                                <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>305 McArthur Highway, Diamond Subd, Balibago, Angeles City</a></div>
                                             </div>
                                         </div>
                                     </article>
@@ -232,22 +135,22 @@
                                 <div class="listing-item">
                                     <article class="geodir-category-listing fl-wrap">
                                         <div class="geodir-category-img">
-                                            <img src="assets/frontend-assets/images/all/1.jpg" alt="">
+                                            <img src="assets/frontend-assets/images/restaurants/dainty.jpg" alt="">
                                             <div class="overlay"></div>
                                             <div class="list-post-counter"><span>15</span><i class="fa fa-heart"></i></div>
                                         </div>
                                         <div class="geodir-category-content fl-wrap">
-                                            <a class="listing-geodir-category" href="listing.php">Event</a>
+                                            <a class="listing-geodir-category" href="#">Restaurants</a>
                                             <div class="listing-avatar"><a href="author-single.php"><img src="assets/frontend-assets/images/avatar/2.jpg" alt=""></a>
                                                 <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
                                             </div>
-                                            <h3><a href="listingsingle">Event In City Mol</a></h3>
+                                            <h3><a href="Dainty_Asian_Cuisine">Dainty Asian Cuisine</a></h3>
                                             <p>Morbi suscipit erat in diam bibendum rutrum in nisl. Aliquam et purus ante.</p>
                                             <div class="geodir-category-options fl-wrap">
                                                 <div class="listing-rating card-popup-rainingvis" data-starrating2="4">
                                                     <span>(17 reviews)</span>
                                                 </div>
-                                                <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
+                                                <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Mr. Cheng Building, McArthur Highway, Balibago, Angeles City</a></div>
                                             </div>
                                         </div>
                                     </article>
@@ -258,16 +161,16 @@
                                 <div class="listing-item">
                                     <article class="geodir-category-listing fl-wrap">
                                         <div class="geodir-category-img">
-                                            <img src="assets/frontend-assets/images/all/4.jpg" alt="">
+                                            <img src="assets/frontend-assets/images/restaurants/koko.jpg" alt="">
                                             <div class="overlay"></div>
                                             <div class="list-post-counter"><span>553</span><i class="fa fa-heart"></i></div>
                                         </div>
                                         <div class="geodir-category-content fl-wrap">
-                                            <a class="listing-geodir-category" href="listing.php">Restourants</a>
+                                            <a class="listing-geodir-category" href="listing.php">Restaurants</a>
                                             <div class="listing-avatar"><a href="author-single.php"><img src="assets/frontend-assets/images/avatar/3.jpg" alt=""></a>
                                                 <span class="avatar-tooltip">Added By  <strong>Adam Koncy</strong></span>
                                             </div>
-                                            <h3><a href="listingsingle">Luxury Restourant</a></h3>
+                                            <h3><a href="Koko_Buri">Koko Buri</a></h3>
                                             <p>Sed non neque elit. Sed ut imperdie.</p>
                                             <div class="geodir-category-options fl-wrap">
                                                 <div class="listing-rating card-popup-rainingvis" data-starrating2="5">

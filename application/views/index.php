@@ -110,7 +110,7 @@
                                             <img  src="assets/frontend-assets/images/bg/19.jpg"   alt="">
                                             <div class="listing-counter"><span>6 </span> Locations</div>
                                             <div class="listing-item-cat">
-                                                <h3><a href="listing.php">Cafe - Pub</a></h3>
+                                                <h3><a href="Restaurants">Restaurants</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
@@ -152,7 +152,7 @@
                                             <img  src="assets/frontend-assets/images/all/5.jpg"   alt="">
                                             <div class="listing-counter"><span>15 </span> Locations</div>
                                             <div class="listing-item-cat">
-                                                <h3><a href="Listings">Shop - Store</a></h3>
+                                                <h3><a href="listing.php">Shop - Store</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
