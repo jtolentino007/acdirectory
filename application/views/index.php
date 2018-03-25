@@ -24,7 +24,7 @@
                 <div class="content">
                     <!--section -->
                     <section class="scroll-con-sec hero-section" data-scrollax-parent="true" id="sec1">
-                        <div class="slideshow-container" data-scrollax="properties: { translateY: '200px' }" >
+                        <div class="slideshow-container" data-scrollax="properties: { translateY: '200px' }">
                             <!-- slideshow-item -->
                             <div class="slideshow-item">
                                 <div class="bg"  data-bg="assets/frontend-assets/images/bg/6.jpg"></div>
@@ -41,6 +41,23 @@
                             </div>
                             <!--  slideshow-item end  -->
                         </div>
+                        <!-- <div class="media-container video-parallax" data-scrollax="properties: { translateY: '200px' }">
+                            <div class="bg mob-bg" style="background-image: url(images/bg/29.jpg)"></div>
+                            <div class="video-container">
+                                <video autoplay  loop muted  class="bgvid">
+                                    <source src="assets/frontend-assets/video/4.mp4" type="video/mp4">
+                                </video>
+                            </div> -->
+                                    <!--  
+                                        Vimeo code
+                                        
+                                         <div  class="background-vimeo" data-vim="97871257"> </div> --> 
+                                    <!--  
+                                        Youtube code 
+                                        
+                                         <div  class="background-youtube-wrapper" data-vid="Hg5iNVSp2z8" data-mv="1"> </div> -->
+                            
+                        <!-- </div> -->
                         <div class="overlay"></div>
                         <div class="hero-section-wrap fl-wrap">
                             <div class="container">
@@ -110,7 +127,7 @@
                                             <img  src="assets/frontend-assets/images/bg/19.jpg"   alt="">
                                             <div class="listing-counter"><span>6 </span> Locations</div>
                                             <div class="listing-item-cat">
-                                                <h3><a href="Restaurants">Restaurants</a></h3>
+                                                <h3><a href="Restaurants_Category">Restaurants</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>

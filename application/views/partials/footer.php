@@ -1,4 +1,3 @@
-<!--footer -->
 <footer class="main-footer dark-footer  ">
     <div class="container">
         <div class="row">
@@ -45,12 +44,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <div class="footer-widget fl-wrap">
                     <h3>Our  Twitter</h3>
                     <div id="footer-twiit"></div>
                 </div>
-            </div>
+            </div> -->
             <div class="col-md-3">
                 <div class="footer-widget fl-wrap">
                     <h3>Subscribe</h3>

@@ -22,9 +22,20 @@ class AIMS_Controller extends CI_Controller
       return $this->load->view('partials/header',$data,TRUE);
     }
 
+    function get_cms_header($title)
+    {
+      $data['title'] = $title;
+      return $this->load->view('partials/cms_header',$data,TRUE);
+    }
+
     function get_header_nav()
     {
       return $this->load->view('partials/header_nav','',TRUE);
+    }
+
+    function get_cms_top_bar()
+    {
+      return $this->load->view('partials/cms_top_bar','',TRUE);
     }
 
     function get_footer()
@@ -32,9 +43,34 @@ class AIMS_Controller extends CI_Controller
       return $this->load->view('partials/footer','',TRUE);
     }
 
+    function get_cms_footer()
+    {
+      return $this->load->view('partials/cms_footer','',TRUE);
+    }
+
+    function get_cms_left_panel()
+    {
+      return $this->load->view('partials/cms_left_panel','',TRUE);
+    }
+
+    function get_cms_right_panel()
+    {
+      return $this->load->view('partials/cms_right_panel','',TRUE);
+    }
+
     function get_js()
     {
       return $this->load->view('partials/js_footer','',TRUE);
+    }
+
+    function get_cms_js()
+    {
+      return $this->load->view('partials/js_cms','',TRUE);
+    }
+
+    function get_cms_css()
+    {
+      return $this->load->view('partials/cms_css','',TRUE);
     }
 
     function end_session(){
