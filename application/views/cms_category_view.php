@@ -148,7 +148,7 @@
     </div><!-- sl-mainpanel -->
     <!-- ########## END: MAIN PANEL ########## -->
       
-    <!-- <?= $cms_js; ?> -->
+    <?= $cms_js; ?>
     <script src="assets/frontend-assets/lib/jquery/jquery.js"></script>
     <script src="assets/frontend-assets/lib/popper.js/popper.js"></script>
     <script src="assets/frontend-assets/lib/bootstrap/bootstrap.js"></script>
@@ -164,7 +164,7 @@
     <script src="assets/frontend-assets/lib/d3/d3.js"></script>
     
 
-    <script src="assets/frontend-assets/js/starlight.js"></script>
+    <script src="assets/frontend-assets/js/cms/starlight.js"></script>
     <script>
       $(function(){
         //'use strict';

@@ -42,6 +42,22 @@
       <!-- END: -->
     </div><!-- sl-mainpanel -->
     <?= $cms_js; ?>
+    <script src="assets/frontend-assets/lib/jquery/jquery.js"></script>
+    <script src="assets/frontend-assets/lib/popper.js/popper.js"></script>
+    <script src="assets/frontend-assets/lib/bootstrap/bootstrap.js"></script>
+    <script src="assets/frontend-assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="assets/frontend-assets/lib/highlightjs/highlight.pack.js"></script>
+    <script src="assets/frontend-assets/lib/datatables/jquery.dataTables.js"></script>
+    <script src="assets/frontend-assets/lib/datatables-responsive/dataTables.responsive.js"></script>
+    <script src="assets/frontend-assets/lib/select2/js/select2.min.js"></script>
+
+
+    <script src="assets/frontend-assets/lib/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/frontend-assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="assets/frontend-assets/lib/d3/d3.js"></script>
+    
+
+    <script src="assets/frontend-assets/js/cms/starlight.js"></script>
   </body>
 
 </html>

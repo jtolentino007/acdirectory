@@ -21,3 +21,4 @@ class Admin_Category extends AIMS_Controller
 		$this->load->view('cms_category_view',$data);
 	}
 }
+?>

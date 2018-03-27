@@ -15,7 +15,7 @@
         <span class="menu-item-label">Dashboard</span>
       </div><!-- menu-item -->
     </a><!-- sl-menu-link -->
-    <a href="#" class="sl-menu-link">
+    <a href="javascript:void()" class="sl-menu-link">
       <div class="sl-menu-item">
         <i class="menu-item-icon fa fa-building tx-20"></i>
         <span class="menu-item-label">Establishments</span>
