@@ -6,6 +6,6 @@
   </head>
   <body>
     <h1>This is the Dashboard</h1>
-    <a href="Authentication/logout">Logout</a>
+    <a href="Login/logout">Logout</a>
   </body>
 </html>

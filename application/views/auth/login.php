@@ -71,13 +71,12 @@
                   <div id="tabs-container" style="margin-top: -20px;">
                       <ul class="tabs-menu">
                           <li class="current"><a href="#tab-1">Login</a></li>
-                          <li><a href="#tab-2">Register</a></li>
                       </ul>
                       <div class="tab">
                           <div id="tab-1" class="tab-content">
                               <div class="custom-form">
-                                  <form method="post"  name="registerform">
-                                    <?php echo form_open("Authentication/login");?>
+                                    <div id="infoMessage"><?php echo $message;?></div>
+                                    <?php echo form_open("Login/authenticate");?>
                                       <label>Username or Email Address * </label>
                                       <input name="identity" type="text"   onClick="this.select()" value id="identity">
                                       <label >Password * </label>
@@ -89,26 +88,8 @@
                                           <label for="check-a">Remember me</label>
                                       </div>
                                     <?php echo form_close();?>
-                                  </form>
                                   <div class="lost_password">
                                       <a href="#">Lost Your Password?</a>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="tab">
-                              <div id="tab-2" class="tab-content">
-                                  <div class="custom-form">
-                                      <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
-                                          <label >First Name * </label>
-                                          <input name="name" type="text"   onClick="this.select()" value="">
-                                          <label>Second Name *</label>
-                                          <input name="name2" type="text"  onClick="this.select()" value="">
-                                          <label>Email Address *</label>
-                                          <input name="email" type="text"  onClick="this.select()" value="">
-                                          <label >Password *</label>
-                                          <input name="password" type="password"   onClick="this.select()" value="" >
-                                          <button type="submit" name="submit" value="Login"    class="log-submit-btn"  ><span>Register</span></button>
-                                      </form>
                                   </div>
                               </div>
                           </div>

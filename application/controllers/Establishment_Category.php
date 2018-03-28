@@ -34,7 +34,7 @@ class Establishment_category extends AIMS_Controller
 				'label' => 'Establishment Category Description',
 				'rules' => 'required'
 			)
-		)
+		);
 
 		$this->form_validation->set_rules($config);
 

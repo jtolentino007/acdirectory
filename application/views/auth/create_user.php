@@ -3,7 +3,7 @@
 
 <div id="infoMessage"><?php echo $message;?></div>
 
-<?php echo form_open("auth/create_user");?>
+<?php echo form_open("authentication/register");?>
 
       <p>
             <?php echo lang('create_user_fname_label', 'first_name');?> <br />
@@ -14,7 +14,7 @@
             <?php echo lang('create_user_lname_label', 'last_name');?> <br />
             <?php echo form_input($last_name);?>
       </p>
-      
+
       <?php
       if($identity_column!=='email') {
           echo '<p>';
