@@ -12,7 +12,7 @@
 
     public function index()
     {
-      $this->ReturnView('_layout');
+      $this->ReturnView('_layout','index');
     }
   }
 

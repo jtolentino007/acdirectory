@@ -1,7 +1,7 @@
 <?php
   defined('BASEPATH') OR exit('No direct script access allowed');
 
-  class Login extends AIMS_Controller
+  class User extends AIMS_Controller
   {
 
     function __construct()
@@ -82,7 +82,7 @@
   			// check to see if we are creating the user
   			// redirect them back to the admin page
   			$this->session->set_flashdata('message', $this->ion_auth->messages());
-  			redirect(base_url()."login", 'refresh');
+  			redirect(base_url()."user", 'refresh');
   		}
   		else
   		{
@@ -148,8 +148,8 @@
   		$this->data['title'] = $this->lang->line('login_heading');
 
   		// validate form input
-  		$this->form_validation->set_rules('identity', str_replace(':', '', $this->lang->line('login_identity_label')), 'required');
-  		$this->form_validation->set_rules('password', str_replace(':', '', $this->lang->line('login_password_label')), 'required');
+  		$this->form_validation->set_rules('identity', str_replace(':', '', $this->lang->line('login_identity_label')), 'required', 'Username or Email Address is required');
+  		$this->form_validation->set_rules('password', str_replace(':', '', $this->lang->line('login_password_label')), 'required', 'Password is required');
 
   		if ($this->form_validation->run() === TRUE)
   		{
@@ -161,36 +161,32 @@
   			{
   				//if the login is successful
   				//redirect them back to the home page
-  				$this->session->set_flashdata('message', $this->ion_auth->messages());
-  				redirect(base_url().'Dashboard', 'refresh');
+  				//$this->session->set_flashdata('message', $this->ion_auth->messages());
+          $response['status'] = "success";
+          $response['message'] = $this->ion_auth->messages();
+          echo json_encode($response);
   			}
   			else
   			{
   				// if the login was un-successful
   				// redirect them back to the login page
-  				$this->session->set_flashdata('message', $this->ion_auth->errors());
-  				redirect('Login/authenticate', 'refresh'); // use redirects instead of loading views for compatibility with MY_Controller libraries
+  				//$this->session->set_flashdata('message', $this->ion_auth->errors());
+  				//redirect(base_url().'User', 'refresh'); // use redirects instead of loading views for compatibility with MY_Controller libraries
+          $response['status'] = "error";
+          $response['message'] = $this->ion_auth->errors();
+          echo json_encode($response);
   			}
   		}
   		else
   		{
-  			// the user is not logging in so display the login page
-  			// set the flash data error message if there is one
-  			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-
-  			$this->data['identity'] = array('name' => 'identity',
-  				'id' => 'identity',
-          'class' => 'form-control',
-  				'type' => 'text',
-  				'value' => $this->form_validation->set_value('identity'),
-  			);
-  			$this->data['password'] = array('name' => 'password',
-  				'id' => 'password',
-          'class' => 'form-control',
-  				'type' => 'password',
-  			);
-
-  			$this->load->view('auth/login', $this->data);
+        if (form_error('identity') == null && form_error('password') == null)
+        {
+          redirect(base_url().'user');
+        } else {
+          $response['status'] = "error";
+          $response['message'] = form_error('identity').form_error('password');
+          echo json_encode($response);
+        }
   		}
   	}
 
@@ -203,7 +199,7 @@
 
   		// redirect them to the login page
   		$this->session->set_flashdata('message', $this->ion_auth->messages());
-  		redirect(base_url().'Login', 'refresh');
+  		redirect(base_url().'user', 'refresh');
   	}
 
     public function forgot_password()

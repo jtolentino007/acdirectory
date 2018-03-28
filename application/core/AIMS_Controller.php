@@ -15,11 +15,11 @@ class AIMS_Controller extends CI_Controller
       }
     }
 
-    function ReturnView($layout)
+    function ReturnView($layout,$component)
     {
       $view = ($this->get_called_function() == 'index' ? get_called_class() : get_called_function());
       $data['title'] = str_replace("_"," ",$view);
-      $data['RenderBody'] = $this->load->view(strtolower($view).'_view','',TRUE);
+      $data['RenderBody'] = $this->load->view(strtolower($view).'/'.$component.'.php','',TRUE);
       $this->load->view('partials/'.$layout,$data);
     }
 

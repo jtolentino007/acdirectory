@@ -13,7 +13,7 @@ class Establishment_category extends AIMS_Controller
 	public function index()
 	{
 		$data['est_categories'] = $this->Establishment_category_model->get_est_categories();
-		$this->ReturnView('_layout');
+		$this->ReturnView('_layout','index');
 	}
 
 	public function create()
@@ -41,10 +41,6 @@ class Establishment_category extends AIMS_Controller
 		if ($this->form_validation->run() == FALSE)
 		{
 			$this->ReturnView('_layout');
-		}
-		else
-		{
-
 		}
 	}
 }

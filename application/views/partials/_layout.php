@@ -56,12 +56,6 @@
     <!-- Start Left Panel -->
     <div class="sl-logo"><a href="#"><i class="icon ion-android-star-outline"></i> Admin Panel</a></div>
     <div class="sl-sideleft">
-      <div class="input-group input-group-search">
-        <input type="search" name="search" class="form-control" placeholder="Search">
-        <span class="input-group-btn">
-          <button class="btn"><i class="fa fa-search"></i></button>
-        </span><!-- input-group-btn -->
-      </div><!-- input-group -->
 
       <label class="sidebar-label">Navigation</label>
       <div class="sl-sideleft-menu">
@@ -79,7 +73,7 @@
           </div><!-- menu-item -->
         </a><!-- sl-menu-link -->
         <ul class="sl-menu-sub nav flex-column">
-          <li class="nav-item"><a href="Admin_Category" class="nav-link">Main Category</a></li>
+          <li class="nav-item"><a href="Establishment_category" class="nav-link">Main Category</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Sub Category</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Clients</a></li>
         </ul>
@@ -144,7 +138,7 @@
                 <li><a href="#"><i class="icon ion-ios-download-outline"></i> Downloads</a></li>
                 <li><a href="#"><i class="icon ion-ios-star-outline"></i> Favorites</a></li>
                 <li><a href="#"><i class="icon ion-ios-folder-outline"></i> Collections</a></li>
-                <li><a href="#"><i class="icon ion-power"></i> Sign Out</a></li>
+                <li><a href="user/logout"><i class="icon ion-power"></i> Sign Out</a></li>
               </ul>
             </div><!-- dropdown-menu -->
           </div><!-- dropdown -->
