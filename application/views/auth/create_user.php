@@ -3,7 +3,7 @@
 
 <div id="infoMessage"><?php echo $message;?></div>
 
-<?php echo form_open("authentication/register");?>
+<?php echo form_open("login/register");?>
 
       <p>
             <?php echo lang('create_user_fname_label', 'first_name');?> <br />

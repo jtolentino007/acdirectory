@@ -82,7 +82,7 @@
   			// check to see if we are creating the user
   			// redirect them back to the admin page
   			$this->session->set_flashdata('message', $this->ion_auth->messages());
-  			redirect(base_url()."login/authenticate", 'refresh');
+  			redirect(base_url()."login", 'refresh');
   		}
   		else
   		{
