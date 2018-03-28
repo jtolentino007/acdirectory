@@ -25,34 +25,36 @@
     <!--register form -->
         <div class="main-overlay"></div>
         <div class="main-register-holder" style="position: relative; top: -80px;">
-            <div class="main-register fl-wrap">
-                <!-- <div class="close-reg"><i class="fa fa-times"></i></div> -->
-                <h3><img src="assets/frontend-assets/images/logo9.png" alt=""></h3>
-                <div id="tabs-container" style="margin-top: -20px;">
-                    <div class="tab">
-                        <div id="tab-1" class="tab-content">
-                            <div class="custom-form">
-                              <div class="message"></div>
-                              <form id="frm_login">
-                                <label>Username or Email Address * </label>
-                                <input name="identity" type="text" onClick="this.select()" value id="identity">
-                                <label >Password * </label>
-                                <input name="password" type="password" onClick="this.select()" value id="password" >
-                                <button type="button" class="log-submit-btn"><span>Log In</span></button>
-                                <div class="clearfix"></div>
-                                <div class="filter-tags">
-                                  <input id="check-a" type="checkbox" name="remember" value="1" id="remember">
-                                  <label for="check-a">Remember me</label>
+          <div class="main-register fl-wrap">
+            <h3><img src="assets/frontend-assets/images/logo9.png" alt="" style="margin-left: 10px;"></h3>
+            <div class="col-md-6">
+                  <!-- <div class="close-reg"><i class="fa fa-times"></i></div> -->
+                  <div id="tabs-container" style="margin-top: -20px;">
+                      <div class="tab">
+                          <div id="tab-1" class="tab-content">
+                              <div class="custom-form">
+                                <div class="message"></div>
+                                <form id="frm_login">
+                                  <label>Username or Email Address * </label>
+                                  <input name="identity" type="text" onClick="this.select()" value id="identity">
+                                  <label >Password * </label>
+                                  <input name="password" type="password" onClick="this.select()" value id="password" >
+                                  <button type="button" class="log-submit-btn"><span>Log In</span></button>
+                                  <div class="clearfix"></div>
+                                  <div class="filter-tags">
+                                    <input id="check-a" type="checkbox" name="remember" value="1" id="remember">
+                                    <label for="check-a">Remember me</label>
+                                  </div>
+                                </form>
+                                <div class="lost_password">
+                                    <a href="#">Lost Your Password?</a>
                                 </div>
-                              </form>
-                              <div class="lost_password">
-                                  <a href="#">Lost Your Password?</a>
                               </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="log-separator fl-wrap"><span>or</span></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 soc_panel">
                 <div class="soc-log fl-wrap">
                     <p>For faster login or register use your social account.</p>
                     <a href="#" class="facebook-log"><i class="fa fa-facebook-official"></i>Log in with Facebook</a>
@@ -60,7 +62,8 @@
                     <a href="#" class="twitter-log"><i class="fa fa-twitter"></i> Log in with Twitter</a>
                     <a href="#" class="instagram-log"><i class="fa fa-instagram"></i> Log in with Instagram</a>
                 </div>
-            </div>
+              </div>
+          </div>
         </div>
     <!--register form end -->
     <script type="text/javascript" src="assets/frontend-assets/js/jquery.min.js"></script>

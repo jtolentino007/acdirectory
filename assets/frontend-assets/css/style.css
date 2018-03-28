@@ -1203,7 +1203,7 @@ section.color-bg .section-title .breadcrumbs a:before {
     overflow:hidden;
 }
 .main-register-holder {
-	max-width:480px;
+	max-width:1000px;
 	margin:100px auto 50px;
 	position:relative;
 	z-index:5;
@@ -1227,9 +1227,9 @@ section.color-bg .section-title .breadcrumbs a:before {
     font-family: 'Montserrat', sans-serif;
 }
 .main-register {
-	float:left;
+	margin-left: auto;
+	margin-right: auto;
 	width:100%;
-	position:relative;
 	padding:0 0 30px;
 	margin-bottom:50px;
 	background:#fff;
@@ -5763,6 +5763,11 @@ footer.main-footer.fixed-footer {
 .mob-bg {
 	display:none;
 }
+
+.soc_panel {
+	position: relative;
+	top: -15px;
+}
 /*------Responsive------------------------------------------------*/
 @media only screen and  (max-width: 1524px) {
 .cs-wrapper {
@@ -6090,6 +6095,11 @@ section.list-single-section {
 .logo-holder {
     height: 20px;
 	top:32px;
+}
+
+.soc_panel {
+	position: relative;
+	top: 0px;
 }
 }
 @media only screen and  (max-width: 540px) {
