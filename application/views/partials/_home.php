@@ -2,10 +2,22 @@
 <html lang="en">
 
 <head>
-        <!--=============== basic  ===============-->
-        <?= $header; ?>
-        <!--=============== css  ===============-->
-    </head>
+  <meta charset="UTF-8">
+  <meta name="google-signin-client_id" content="809452780704-kf8rj9v58h7cm0eiijjvkhnbrl6shnsd.apps.googleusercontent.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="index, follow"/>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <title><?= $title; ?></title>
+  <script src="assets/frontend-assets/jquery/jquery-3.3.1.slim.min.js"></script>
+  <link rel="stylesheet" href="assets/frontend-assets/fontawesome-free-5.0.8/svg-with-js/css/fa-svg-with-js.css">
+  <link rel="shortcut icon" href="assets/frontend-assets/images/favicon.png">
+  <link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/reset.css">
+  <link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/plugins.css">
+  <link type="text/css" rel="stylesheet " href="assets/frontend-assets/css/style.css">
+  <link type="text/css" rel="stylesheet" href="assets/frontend-assets/css/color.css">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
     <body>
         <!--loader-->
         <div class="loader-wrap">
@@ -16,8 +28,105 @@
         <!-- Main  -->
         <div id="main">
             <!-- header_nav -->
-                <?= $header_nav; ?>
-            <!-- header_nav end -->
+            <header class="main-header dark-header fs-header sticky">
+                <div class="header-inner">
+                    <div class="logo-holder">
+                        <a href="Homepage"><img src="assets/frontend-assets/images/logo.png" alt=""></a>
+                    </div>
+                    <div class="header-search vis-header-search">
+                        <div class="header-search-input-item">
+                            <input type="text" placeholder="Keywords" value=""/>
+                        </div>
+                        <div class="header-search-select-item">
+                            <select data-placeholder="All Categories" class="chosen-select" >
+                                <option>All Categories</option>
+                                <option>Shops</option>
+                                <option>Hotels</option>
+                                <option>Restaurants</option>
+                                <option>Fitness</option>
+                                <option>Events</option>
+                            </select>
+                        </div>
+                        <button class="header-search-button" onclick="window.location.href='listing.php'">Search</button>
+                    </div>
+                    <div class="show-search-button"><i class="fa fa-search"></i> <span>Search</span></div>
+                    <a href="dashboard-add-listing.php" class="add-list">Add Listing <span><i class="fa fa-plus"></i></span></a>
+                    <div class="show-reg-form modal-open"><i class="fa fa-sign-in"></i>Sign In</div>
+                    <!-- nav-button-wrap-->
+                    <div class="nav-button-wrap color-bg">
+                        <div class="nav-button">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <!-- nav-button-wrap end-->
+                    <!--  navigation -->
+                    <div class="nav-holder main-menu">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#" class="act-link">Home <i class="fa fa-caret-down"></i></a>
+                                    <!--second level -->
+                                    <ul>
+                                        <li><a href="index.php">Parallax Image</a></li>
+                                        <li><a href="index2.php">Video</a></li>
+                                        <li><a href="index3.php">Map</a></li>
+                                        <li><a href="index4.php">Slideshow</a></li>
+                                        <li><a href="index5.php">Sider</a></li>
+                                    </ul>
+                                    <!--second level end-->
+                                </li>
+                                <li>
+                                    <a href="#">Listings <i class="fa fa-caret-down"></i></a>
+                                    <!--second level -->
+                                    <ul>
+                                        <li><a href="listing.php">Column map</a></li>
+                                        <li><a href="listing2.php">Column map 2</a></li>
+                                        <li><a href="listing3.php">Fullwidth Map</a></li>
+                                        <li><a href="listing4.php">Fullwidth Map 2</a></li>
+                                        <li><a href="listing5.php">Without Map</a></li>
+                                        <li><a href="listing6.php">Without Map 2</a></li>
+                                        <li>
+                                            <a href="#">Single <i class="fa fa-caret-down"></i></a>
+                                            <!--third  level  -->
+                                            <ul>
+                                                <li><a href="listing-single.php">Style 1</a></li>
+                                                <li><a href="listing-single2.php">Style 2</a></li>
+                                                <li><a href="listing-single3.php">Style 3</a></li>
+                                            </ul>
+                                            <!--third  level end-->
+                                        </li>
+                                    </ul>
+                                    <!--second level end-->
+                                </li>
+                                <li>
+                                    <a href="blog.php">News</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pages <i class="fa fa-caret-down"></i></a>
+                                    <!--second level -->
+                                    <ul>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="contacts.php">Contacts</a></li>
+                                        <li><a href="author-single.php">User single</a></li>
+                                        <li><a href="how-itworks.php">How it Works</a></li>
+                                        <li><a href="pricing-tables.php">Pricing</a></li>
+                                        <li><a href="dashboard-myprofile.php">User Dasboard</a></li>
+                                        <li><a href="blog-single.php">Blog Single</a></li>
+                                        <li><a href="dashboard-add-listing.php">Add Listing</a></li>
+                                        <li><a href="404.php">404</a></li>
+                                        <li><a href="coming-soon.php">Coming Soon</a></li>
+                                        <li><a href="header2.php">Header 2</a></li>
+                                        <li><a href="footer-fixed.php">Footer Fixed</a></li>
+                                    </ul>
+                                    <!--second level end-->
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- navigation  end -->
+                </div>
+            </header>
+            <!--  header end -->
             <!-- wrapper -->
             <div id="wrapper">
                 <!-- Content-->
@@ -48,15 +157,15 @@
                                     <source src="assets/frontend-assets/video/4.mp4" type="video/mp4">
                                 </video>
                             </div> -->
-                                    <!--  
+                                    <!--
                                         Vimeo code
-                                        
-                                         <div  class="background-vimeo" data-vim="97871257"> </div> --> 
-                                    <!--  
-                                        Youtube code 
-                                        
+
+                                         <div  class="background-vimeo" data-vim="97871257"> </div> -->
+                                    <!--
+                                        Youtube code
+
                                          <div  class="background-youtube-wrapper" data-vid="Hg5iNVSp2z8" data-mv="1"> </div> -->
-                            
+
                         <!-- </div> -->
                         <div class="overlay"></div>
                         <div class="hero-section-wrap fl-wrap">
@@ -793,7 +902,111 @@
             </div>
             <!-- wrapper end -->
             <!--footer -->
-                <?= $footer; ?>
+            <footer class="main-footer dark-footer  ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footer-widget fl-wrap">
+                                <h3>About Us</h3>
+                                <div class="footer-contacts-widget fl-wrap">
+                                    <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. </p>
+                                    <ul  class="footer-contacts fl-wrap">
+                                        <li><span><i class="fa fa-envelope-o"></i> Mail :</span><a href="#" target="_blank">yourmail@domain.com</a></li>
+                                        <li> <span><i class="fa fa-map-marker"></i> Adress :</span><a href="#" target="_blank">USA 27TH Brooklyn NY</a></li>
+                                        <li><span><i class="fa fa-phone"></i> Phone :</span><a href="#">+7(111)123456789</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-widget fl-wrap">
+                                <h3>Our Last News</h3>
+                                <div class="widget-posts fl-wrap">
+                                    <ul>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="assets/frontend-assets/images/all/1.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Vivamus dapibus rutrum</a>
+                                                <span class="widget-posts-date"> 21 Mar 09.05 </span>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="assets/frontend-assets/images/all/2.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title=""> In hac habitasse platea</a>
+                                                <span class="widget-posts-date"> 7 Mar 18.21 </span>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="assets/frontend-assets/images/all/3.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Tortor tempor in porta</a>
+                                                <span class="widget-posts-date"> 7 Mar 16.42 </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-widget fl-wrap">
+                                <h3>Our  Twitter</h3>
+                                <div id="footer-twiit"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-widget fl-wrap">
+                                <h3>Subscribe</h3>
+                                <div class="subscribe-widget fl-wrap">
+                                    <p>Want to be notified when we launch a new template or an udpate. Just sign up and we'll send you a notification by email.</p>
+                                    <div class="subcribe-form">
+                                        <form id="subscribe">
+                                            <input class="enteremail" name="email" id="subscribe-email" placeholder="Email" spellcheck="false" type="text">
+                                            <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fa fa-rss"></i> Subscribe</button>
+                                            <label for="subscribe-email" class="subscribe-message"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="footer-widget fl-wrap">
+                                    <div class="footer-menu fl-wrap">
+                                        <ul>
+                                            <li><a href="#">Home </a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Listing</a></li>
+                                            <li><a href="#">Contacts</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-footer fl-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="about-widget">
+                                    <img src="assets/frontend-assets/images/logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="copyright"> &#169; AIMS 2018 .  All rights reserved.</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-facebook-official"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-chrome"></i></a></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-vk"></i></a></li>
+                                        <li><a href="#" target="_blank" ><i class="fa fa-whatsapp"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
             <!--footer end  -->
             <!--register form -->
             <div class="main-register-wrap modal">
@@ -811,7 +1024,7 @@
                                   <div id="tab-1" class="tab-content">
                                       <div class="custom-form">
                                           <form method="post"  name="registerform">
-                                            
+
                                               <label>Username or Email Address * </label>
                                               <input name="identity" type="text"   onClick="this.select()" value id="identity">
                                               <label >Password * </label>
@@ -822,7 +1035,7 @@
                                                   <input id="check-a" type="checkbox" name="remember" value="1" id="remember">
                                                   <label for="check-a">Remember me</label>
                                               </div>
-                                           
+
                                           </form>
                                           <div class="lost_password">
                                               <a href="#">Lost Your Password?</a>
@@ -863,7 +1076,13 @@
             <a class="to-top"><i class="fa fa-angle-up"></i></a>
         </div>
         <!-- Main end -->
-        <?= $js_footer ?>
+        <script type="text/javascript" src="assets/frontend-assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/frontend-assets/js/plugins.js"></script>
+        <script type="text/javascript" src="assets/frontend-assets/js/scripts.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo"></script>
+        <script type="text/javascript" src="assets/frontend-assets/js/map_infobox.js"></script>
+        <script type="text/javascript" src="assets/frontend-assets/js/markerclusterer.js"></script>
+        <script type="text/javascript" src="assets/frontend-assets/js/maps.js"></script>
     </body>
 
 </html>

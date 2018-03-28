@@ -6,16 +6,16 @@ class Admin extends AIMS_Controller
 	function __construct()
 	{
 		parent::__construct('');
+		$this->validate_session();
+		$this->load->database();
+		$this->load->library(array('ion_auth', 'form_validation'));
+		$this->load->helper(array('url', 'language'));
+		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
+		$this->lang->load('auth');
 	}
 
 	public function index()
 	{
-		$data['cms_header'] = $this->get_cms_header("Admin");
-		$data['cms_top_bar'] = $this->get_cms_top_bar();
-		$data['cms_footer'] = $this->get_cms_footer();
-		$data['cms_left_panel'] = $this->get_cms_left_panel();
-		$data['cms_right_panel'] = $this->get_cms_right_panel();
-		$data['cms_js'] = $this->get_cms_js();
-		$this->load->view('admin_view',$data);
+		$this->ReturnView('_layout');
 	}
 }
