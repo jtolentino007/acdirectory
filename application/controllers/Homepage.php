@@ -10,6 +10,6 @@ class Homepage extends AIMS_Controller
 
 	public function index()
 	{
-		$this->ReturnView('_home');
+		$this->ReturnView('_home','index');
 	}
 }
