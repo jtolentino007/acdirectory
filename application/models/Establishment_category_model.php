@@ -35,12 +35,9 @@
     {
         $this->load->helper('url');
 
-        $slug = url_title($this->input->post('est_category_name'), 'dash', TRUE);
-
         $data = array(
-            'title' => $this->input->post('title'),
-            'slug' => $slug,
-            'text' => $this->input->post('text')
+            'est_category_name' => $this->input->post('est_category_name'),
+            'est_category_desc' => $this->input->post('est_category_name')
         );
 
         if ($id == 0) {

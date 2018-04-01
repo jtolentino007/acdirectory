@@ -51,15 +51,36 @@
     <link href="assets/frontend-assets/lib/datatables/jquery.dataTables.css" rel="stylesheet">
     <link href="assets/frontend-assets/lib/highlightjs/github.css" rel="stylesheet">
     <link href="assets/frontend-assets/lib/select2/css/select2.min.css" rel="stylesheet">
+    <link href="assets/frontend-assets/css/master.css" rel="stylesheet" >
+
+    <script src="assets/frontend-assets/lib/jquery/jquery.js"></script>
+    <script src="assets/frontend-assets/lib/popper.js/popper.js"></script>
+    <script src="assets/frontend-assets/lib/bootstrap/bootstrap.js"></script>
+    <script src="assets/frontend-assets/lib/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/frontend-assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="assets/frontend-assets/lib/jquery.sparkline.bower/jquery.sparkline.min.js"></script>
+    <script src="assets/frontend-assets/lib/d3/d3.js"></script>
+    <script src="assets/frontend-assets/lib/rickshaw/rickshaw.min.js"></script>
+    <script src="assets/frontend-assets/lib/chart.js/Chart.js"></script>
+    <script src="assets/frontend-assets/lib/Flot/jquery.flot.js"></script>
+    <script src="assets/frontend-assets/lib/Flot/jquery.flot.pie.js"></script>
+    <script src="assets/frontend-assets/lib/Flot/jquery.flot.resize.js"></script>
+    <script src="assets/frontend-assets/lib/flot-spline/jquery.flot.spline.js"></script>
+    <script src="assets/frontend-assets/js/cms/starlight.js"></script>
+    <script src="assets/frontend-assets/js/cms/ResizeSensor.js"></script>
+    <script src="assets/frontend-assets/js/cms/dashboard.js"></script>
+    <script src="assets/frontend-assets/lib/datatables/jquery.dataTables.js"></script>
+    <script src="assets/frontend-assets/lib/datatables-responsive/dataTables.responsive.js"></script>
+    <script src="assets/frontend-assets/lib/select2/js/select2.min.js"></script>
+    <script src="assets/frontend-assets/lib/highlightjs/highlight.pack.js"></script>
   </head>
   <body>
     <!-- Start Left Panel -->
-    <div class="sl-logo"><a href="#"><i class="icon ion-android-star-outline"></i> Admin Panel</a></div>
+    <div class="sl-logo"><a href="#"><i class="icon ion-android-star-outline"></i> WIAC CMS</a></div>
     <div class="sl-sideleft">
-
       <label class="sidebar-label">Navigation</label>
       <div class="sl-sideleft-menu">
-        <a href="#" class="sl-menu-link active">
+        <a href="Dashboard" class="sl-menu-link active">
           <div class="sl-menu-item">
             <i class="menu-item-icon icon ion-ios-home-outline tx-22"></i>
             <span class="menu-item-label">Dashboard</span>
@@ -113,6 +134,12 @@
             <span class="menu-item-label">Website</span>
           </div><!-- menu-item -->
         </a><!-- sl-menu-link -->
+        <a href="#" class="sl-menu-link">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon icon ion-ios-person tx-20"></i>
+            <span class="menu-item-label">Users</span>
+          </div><!-- menu-item -->
+        </a><!-- sl-menu-link -->
       </div><!-- sl-sideleft-menu -->
       <br>
     </div><!-- sl-sideleft -->
@@ -128,8 +155,8 @@
         <nav class="nav">
           <div class="dropdown">
             <a href="#" class="nav-link nav-link-profile" data-toggle="dropdown">
-              <span class="logged-name">Jane<span class="hidden-md-down"> Doe</span></span>
-              <img src="assets/frontend-assets/images/cms/img3.jpg" class="wd-32 rounded-circle" alt="">
+              <span class="logged-name"><?= $_SESSION['username']; ?></span></span>
+              <img src="assets/frontend-assets/img/user.png" class="wd-32 rounded-circle" alt="">
             </a>
             <div class="dropdown-menu dropdown-menu-header wd-200">
               <ul class="list-unstyled user-profile-nav">
@@ -138,7 +165,7 @@
                 <li><a href="#"><i class="icon ion-ios-download-outline"></i> Downloads</a></li>
                 <li><a href="#"><i class="icon ion-ios-star-outline"></i> Favorites</a></li>
                 <li><a href="#"><i class="icon ion-ios-folder-outline"></i> Collections</a></li>
-                <li><a href="user/logout"><i class="icon ion-power"></i> Sign Out</a></li>
+                <li><a href="administration/logout"><i class="icon ion-power"></i> Sign Out</a></li>
               </ul>
             </div><!-- dropdown-menu -->
           </div><!-- dropdown -->
@@ -326,25 +353,5 @@
       </footer>
       <!-- End Footer -->
     </div>
-    <script src="assets/frontend-assets/lib/jquery/jquery.js"></script>
-    <script src="assets/frontend-assets/lib/popper.js/popper.js"></script>
-    <script src="assets/frontend-assets/lib/bootstrap/bootstrap.js"></script>
-    <script src="assets/frontend-assets/lib/jquery-ui/jquery-ui.js"></script>
-    <script src="assets/frontend-assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
-    <script src="assets/frontend-assets/lib/jquery.sparkline.bower/jquery.sparkline.min.js"></script>
-    <script src="assets/frontend-assets/lib/d3/d3.js"></script>
-    <script src="assets/frontend-assets/lib/rickshaw/rickshaw.min.js"></script>
-    <script src="assets/frontend-assets/lib/chart.js/Chart.js"></script>
-    <script src="assets/frontend-assets/lib/Flot/jquery.flot.js"></script>
-    <script src="assets/frontend-assets/lib/Flot/jquery.flot.pie.js"></script>
-    <script src="assets/frontend-assets/lib/Flot/jquery.flot.resize.js"></script>
-    <script src="assets/frontend-assets/lib/flot-spline/jquery.flot.spline.js"></script>
-    <script src="assets/frontend-assets/js/cms/starlight.js"></script>
-    <script src="assets/frontend-assets/js/cms/ResizeSensor.js"></script>
-    <script src="assets/frontend-assets/js/cms/dashboard.js"></script>
-    <script src="assets/frontend-assets/lib/datatables/jquery.dataTables.js"></script>
-    <script src="assets/frontend-assets/lib/datatables-responsive/dataTables.responsive.js"></script>
-    <script src="assets/frontend-assets/lib/select2/js/select2.min.js"></script>
-    <script src="assets/frontend-assets/lib/highlightjs/highlight.pack.js"></script>
   </body>
 </html>

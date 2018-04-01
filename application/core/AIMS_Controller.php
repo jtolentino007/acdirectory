@@ -11,7 +11,7 @@ class AIMS_Controller extends CI_Controller
 
     function validate_session(){
       if(!$this->ion_auth->logged_in()){
-          redirect(base_url().'user');
+          redirect(base_url().'administration');
       }
     }
 

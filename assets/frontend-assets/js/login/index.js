@@ -1,7 +1,7 @@
 (function(){
   $('.log-submit-btn').on('click', function(){
     $.ajax({
-      url : "User/authenticate",
+      url : "Administration/authenticate",
       type: "POST",
       dataType : "json",
       data : $('#frm_login').serializeArray(),
@@ -17,6 +17,7 @@
         if (response.status == "success") {
           window.location = 'Dashboard';
         }
+
       }
     });
   });

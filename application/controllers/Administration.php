@@ -1,14 +1,14 @@
 <?php
   defined('BASEPATH') OR exit('No direct script access allowed');
 
-  class User extends AIMS_Controller
+  class Administration extends AIMS_Controller
   {
 
     function __construct()
     {
       parent::__construct();
       $this->load->database();
-      $this->load->library(array('ion_auth', 'form_validation'));
+      $this->load->library(array('ion_auth', 'form_validation', 'session'));
       $this->load->helper(array('url','language'));
 
       $this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter','ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
@@ -82,7 +82,7 @@
   			// check to see if we are creating the user
   			// redirect them back to the admin page
   			$this->session->set_flashdata('message', $this->ion_auth->messages());
-  			redirect(base_url()."user", 'refresh');
+  			redirect(base_url()."administration", 'refresh');
   		}
   		else
   		{
@@ -161,7 +161,15 @@
   			{
   				//if the login is successful
   				//redirect them back to the home page
-  				//$this->session->set_flashdata('message', $this->ion_auth->messages());
+          $user = $this->ion_auth->user()->row();
+
+          $newdata = array(
+           'username'  => $user->first_name.' '.$user->last_name,
+           'email'     => $user->email
+          );
+
+          $this->session->set_userdata($newdata);
+
           $response['status'] = "success";
           $response['message'] = $this->ion_auth->messages();
           echo json_encode($response);
@@ -170,8 +178,6 @@
   			{
   				// if the login was un-successful
   				// redirect them back to the login page
-  				//$this->session->set_flashdata('message', $this->ion_auth->errors());
-  				//redirect(base_url().'User', 'refresh'); // use redirects instead of loading views for compatibility with MY_Controller libraries
           $response['status'] = "error";
           $response['message'] = $this->ion_auth->errors();
           echo json_encode($response);
@@ -181,7 +187,7 @@
   		{
         if (form_error('identity') == null && form_error('password') == null)
         {
-          redirect(base_url().'user');
+          redirect(base_url().'administration');
         } else {
           $response['status'] = "error";
           $response['message'] = form_error('identity').form_error('password');
@@ -199,7 +205,7 @@
 
   		// redirect them to the login page
   		$this->session->set_flashdata('message', $this->ion_auth->messages());
-  		redirect(base_url().'user', 'refresh');
+  		redirect(base_url().'administration', 'refresh');
   	}
 
     public function forgot_password()
