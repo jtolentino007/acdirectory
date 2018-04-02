@@ -1210,6 +1210,12 @@ section.color-bg .section-title .breadcrumbs a:before {
 	position:relative;
 	z-index:5;
 }
+.main-register-holder-register {
+	max-width:500px;
+	margin:100px auto 50px;
+	position:relative;
+	z-index:5;
+}
 .main-register h3 {
 	float:left;
 	width:100%;
@@ -4105,6 +4111,9 @@ article .list-single-main-item {
 	padding-left:10px;
 }
 /*------ Grid Gallery------------------------------------------------*/
+.gallery-item.active {
+	display: block;
+}
 .gallery-items.mr-bot {
 	margin-bottom:40px;
 }
@@ -6150,3 +6159,28 @@ header.main-header {
 	background-position:center;
 }
 }
+
+.asterisk {
+	color: red;
+	font-weight: bold;
+}
+
+/*.show_more {
+	display: none;
+}*/
+
+.gallery_show {
+	display: inline !important;
+}
+
+.gallery_hide {
+	display: none;
+}
+
+/*.gallery_more {
+	visibility: visible;
+}
+
+.gallery_less {
+	visibility: hidden;
+}*/
